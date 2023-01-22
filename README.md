@@ -36,7 +36,6 @@ import 'package:animated_text/animated_text.dart';
 
 ![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_number_text.gif)
 
-
 The widget support lerping between number values. Just setState with the current value and the 
 widget will start animating to it.
 
@@ -56,7 +55,7 @@ AnimatedNumberText(
 
 # AnimatedText
 
-![]()
+![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_text.gif)
 
 The widget support lerping between string values. Just setState with the current value and the 
 widget will start animating to it. Each character will lerp to the new corresponding one 
