@@ -34,7 +34,25 @@ import 'package:animated_text/animated_text.dart';
 
 ### AnimatedNumberText
 
-![]()
+![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_number_text.gif)
+
+
+The widget support lerping between number values. Just setState with the current value and the 
+widget will start animating to it.
+
+```dart
+AnimatedNumberText(
+  value,
+  curve: Curves.easeIn,
+  duration: const Duration(seconds: 1),
+  style: const TextStyle(fontSize: 30),
+  formatter: (value) {
+    final format =
+    intl.NumberFormat.currency(locale: "en").format(value);
+  return format;
+  },
+)
+```
 
 ## Additional information
 
