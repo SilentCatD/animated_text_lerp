@@ -20,7 +20,8 @@ know whether this package might be useful for them.
 - Animating between number (int or double) with AnimatedNumberText.
 - Animating between string, with will lerp each character respectively with AnimatedText.
 - TextStyle animation supported.
-- Think of Flutter's built-int animated widget, but with text.
+- Think of Flutter's pre-built animated widget like AnimatedOpacity, AnimatedAlign, ..., 
+but with text.
 
 ## Getting started
 
