@@ -42,7 +42,7 @@ widget will start animating to it.
 
 ```dart
 AnimatedNumberText(
-  value,
+  value, // int or double
   curve: Curves.easeIn,
   duration: const Duration(seconds: 1),
   style: const TextStyle(fontSize: 30),
@@ -64,7 +64,7 @@ respectively.
 
 ```dart
 AnimatedText(
-  value,
+  value, // string
   curve: Curves.easeIn,
   duration: const Duration(seconds: 1),
   style: const TextStyle(fontSize: 30),
