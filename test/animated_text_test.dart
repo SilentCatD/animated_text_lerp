@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:animated_text/animated_text.dart';
+import 'package:animated_text_lerp/animated_text_lerp.dart';
 
 void main() {
   // test('adds one to input values', () {

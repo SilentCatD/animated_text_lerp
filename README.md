@@ -28,7 +28,7 @@ but with text.
 - First import it:
 
 ```dart
-import 'package:animated_text/animated_string_text.dart';
+import 'package:animated_text_lerp/animated_text_lerp.dart';
 ```
 
 ## Usage
