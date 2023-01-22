@@ -16,21 +16,25 @@ know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Similar to a simple Text widget.
+- Animating between number (int or double) with AnimatedNumberText.
+- Animating between string, with will lerp each character respectively with AnimatedText.
+- TextStyle animation supported.
+- Think of Flutter's built-int animated widget, but with text.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- First import it:
+
+```dart
+import 'package:animated_text/animated_text.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### AnimatedNumberText
 
-```dart
-const like = 'sample';
-```
+![]()
 
 ## Additional information
 
