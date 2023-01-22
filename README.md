@@ -11,8 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Simple widgets to animate between number or string text. Useful for number increase/decrease 
+animation, currency value animation or string content changing animation.
 
 ## Features
 
