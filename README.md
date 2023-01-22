@@ -32,7 +32,7 @@ import 'package:animated_text/animated_text.dart';
 
 ## Usage
 
-### AnimatedNumberText
+# AnimatedNumberText
 
 ![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_number_text.gif)
 
@@ -47,15 +47,26 @@ AnimatedNumberText(
   duration: const Duration(seconds: 1),
   style: const TextStyle(fontSize: 30),
   formatter: (value) {
-    final format =
+    final formatted =
     intl.NumberFormat.currency(locale: "en").format(value);
-  return format;
+    return formatted;
   },
 )
 ```
 
-## Additional information
+# AnimatedText
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+![]()
+
+The widget support lerping between string values. Just setState with the current value and the 
+widget will start animating to it. Each character will lerp to the new corresponding one 
+respectively.
+
+```dart
+AnimatedText(
+  value,
+  curve: Curves.easeIn,
+  duration: const Duration(seconds: 1),
+  style: const TextStyle(fontSize: 30),
+)
+```
