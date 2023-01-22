@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 /// Widget that show a [Text] widget, which will animate between
-/// [AnimatedText.data]. Each character in the old [AnimatedText.data] and new
-/// [AnimatedText.data] will animate to each other respectively.
-class AnimatedText extends ImplicitlyAnimatedWidget {
-  /// Create an [AnimatedText] widget. The property [data] and [duration]
+/// [AnimatedStringText.data]. Each character in the old [AnimatedStringText.data] and new
+/// [AnimatedStringText.data] will animate to each other respectively.
+class AnimatedStringText extends ImplicitlyAnimatedWidget {
+  /// Create an [AnimatedStringText] widget. The property [data] and [duration]
   /// need to be specified. To view the meaning of all other properties, see
   /// [Text] and [ImplicitlyAnimatedWidget].
-  const AnimatedText(
+  const AnimatedStringText(
     this.data, {
     Key? key,
     Curve curve = Curves.linear,
@@ -56,7 +56,7 @@ class AnimatedText extends ImplicitlyAnimatedWidget {
   }
 }
 
-class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedText> {
+class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedStringText> {
   final Map<int, IntTween> _tween = {};
   late String _data;
   String? _oldData;
@@ -104,7 +104,7 @@ class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedText> {
   }
 
   @override
-  void didUpdateWidget(covariant AnimatedText oldWidget) {
+  void didUpdateWidget(covariant AnimatedStringText oldWidget) {
     if (oldWidget.data != widget.data) {
       _oldData = oldWidget.data;
     }
