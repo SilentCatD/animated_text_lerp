@@ -2,7 +2,13 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// Widget that show a [Text] widget, which will animate between
+/// [AnimatedText.data]. Each character in the old [AnimatedText.data] and new
+/// [AnimatedText.data] will animate to each other respectively.
 class AnimatedText extends ImplicitlyAnimatedWidget {
+  /// Create an [AnimatedText] widget. The property [data] and [duration]
+  /// need to be specified. To view the meaning of all other properties, see
+  /// [Text] and [ImplicitlyAnimatedWidget].
   const AnimatedText(
     this.data, {
     Key? key,
@@ -114,6 +120,9 @@ class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedText> {
 
   @override
   void forEachTween(TweenVisitor<dynamic> visitor) {
+    _styleTween = visitor(_styleTween, widget.style,
+            (dynamic value) => TextStyleTween(begin: value as TextStyle))
+        as TextStyleTween?;
     if (_oldData == null) {
       for (int i = 0; i < widget.data.length; i++) {
         _tween[i] = visitor(_tween[i], widget.data.codeUnitAt(i),
@@ -139,9 +148,6 @@ class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedText> {
                 as IntTween;
       }
     }
-    _styleTween = visitor(_styleTween, widget.style,
-            (dynamic value) => TextStyleTween(begin: value as TextStyle))
-        as TextStyleTween?;
   }
 
   @override

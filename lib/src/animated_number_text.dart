@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
+/// Signature for formatting result text of [AnimatedNumberText]. Use this to
+/// replace the default [num.toString] behavior. One example could be to use
+/// with intl package to obtain currency format of a number.
 typedef ValueFormatter<T extends num> = String Function(T value);
 
+/// Widget that show a [Text] widget, which will animate between
+/// [AnimatedNumberText.data]. The type of this data must be [int] or [double].
 class AnimatedNumberText<T extends num> extends ImplicitlyAnimatedWidget {
+  /// Create an [AnimatedNumberText] widget. The property [data] and [duration]
+  /// need to be specified. To view the meaning of all other properties, see
+  /// [Text] and [ImplicitlyAnimatedWidget].
   const AnimatedNumberText(
     this.data, {
     Key? key,
@@ -30,8 +38,12 @@ class AnimatedNumberText<T extends num> extends ImplicitlyAnimatedWidget {
           onEnd: onEnd,
         );
 
+  /// Current value of this widget.
   final T data;
+
+  /// Formatter for this widget result text.
   final ValueFormatter<T>? formatter;
+
   final TextStyle? style;
   final StrutStyle? strutStyle;
   final TextAlign? textAlign;
