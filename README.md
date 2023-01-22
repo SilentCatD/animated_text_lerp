@@ -18,7 +18,7 @@ animation, currency value animation or string content changing animation.
 
 - Similar to a simple Text widget.
 - Animating between number (int or double) with AnimatedNumberText.
-- Animating between string, with will lerp each character respectively with AnimatedText.
+- Animating between string, with will lerp each character respectively with AnimatedStringText.
 - TextStyle animation supported.
 - Think of Flutter's pre-built animated widget like AnimatedOpacity, AnimatedAlign, ..., 
 but with text.
