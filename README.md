@@ -54,7 +54,7 @@ AnimatedNumberText(
 )
 ```
 
-# AnimatedText
+# AnimatedStringText
 
 ![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_text.gif)
 
@@ -63,7 +63,7 @@ widget will start animating to it. Each character will lerp to the new correspon
 respectively.
 
 ```dart
-AnimatedText(
+AnimatedStringText(
   value, // string
   curve: Curves.easeIn,
   duration: const Duration(seconds: 1),
