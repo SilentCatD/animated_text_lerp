@@ -1,6 +1,6 @@
 name: animated_text_lerp
 description: "Simple widgets to animate between number or string text. Useful for number increase/decrease animation, currency value animation or string content changing animation."
-version: 1.0.4
+version: 1.0.4+1
 homepage: https://github.com/SilentCatD/animated_text_lerp
 issue_tracker: https://github.com/SilentCatD/animated_text_lerp/issues
 

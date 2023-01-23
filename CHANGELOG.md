@@ -1,3 +1,7 @@
+## 1.0.4+1
+
+* Update gif url.
+
 ## 1.0.4
 
 * Resize gif and change repo name.
