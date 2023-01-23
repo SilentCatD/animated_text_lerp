@@ -10,6 +10,7 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
+[![pub package](https://img.shields.io/pub/v/animated_text_lerp?color=green&include_prereleases&style=plastic)](https://pub.dev/packages/animated_text_lerp)
 
 Simple widgets to animate between number or string text. Useful for number increase/decrease 
 animation, currency value animation or string content changing animation.
@@ -18,7 +19,7 @@ animation, currency value animation or string content changing animation.
 
 - Similar to a simple Text widget.
 - Animating between number (int or double) with AnimatedNumberText.
-- Animating between string, with will lerp each character respectively with AnimatedStringText.
+- Animating between string, which will lerp each character respectively with AnimatedStringText.
 - TextStyle animation supported.
 - Think of Flutter's pre-built animated widget like AnimatedOpacity, AnimatedAlign, ..., 
 but with text.
@@ -35,7 +36,8 @@ import 'package:animated_text_lerp/animated_text_lerp.dart';
 
 # AnimatedNumberText
 
-![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_number_text.gif)
+[//]: # (![]&#40;https://github.com/SilentCatD/animated_text/blob/main/assets/animated_number_text.gif&#41;)
+<img src="/assets/animated_number_text.gif?raw=true" width="200px">
 
 The widget support lerping between number values. Just setState with the current value and the 
 widget will start animating to it.
@@ -56,7 +58,9 @@ AnimatedNumberText(
 
 # AnimatedStringText
 
-![](https://github.com/SilentCatD/animated_text/blob/main/assets/animated_text.gif)
+[//]: # (![]&#40;https://github.com/SilentCatD/animated_text/blob/main/assets/animated_text.gif&#41;)
+
+<img src="/assets/animated_text.gif?raw=true" width="200px">
 
 The widget support lerping between string values. Just setState with the current value and the 
 widget will start animating to it. Each character will lerp to the new corresponding one 
