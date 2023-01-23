@@ -57,7 +57,7 @@ class AnimatedStringText extends ImplicitlyAnimatedWidget {
 }
 
 class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedStringText> {
-  final Map<int, IntTween> _tween = {};
+  final Map<int, IntTween?> _tween = {};
   late String _data;
   String? _oldData;
   TextStyle? _style;
@@ -126,14 +126,14 @@ class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedStringText> {
     if (_oldData == null) {
       for (int i = 0; i < widget.data.length; i++) {
         _tween[i] = visitor(_tween[i], widget.data.codeUnitAt(i),
-            (value) => IntTween(begin: value)) as IntTween;
+            (value) => IntTween(begin: value)) as IntTween?;
       }
       return;
     }
     for (int i = 0; i < length; i++) {
       if (i < oldDataLength && i < widget.data.length) {
         _tween[i] = visitor(_tween[i], widget.data.codeUnitAt(i),
-            (value) => IntTween(begin: value)) as IntTween;
+            (value) => IntTween(begin: value)) as IntTween?;
       } else if (i > oldDataLength - 1) {
         _tween[i] = visitor(
             IntTween(
@@ -141,11 +141,11 @@ class _AnimatedTextState extends AnimatedWidgetBaseState<AnimatedStringText> {
               end: emptyCodeUnit,
             ),
             widget.data.codeUnitAt(i),
-            (value) => IntTween(begin: value)) as IntTween;
+            (value) => IntTween(begin: value)) as IntTween?;
       } else if (i > widget.data.length - 1) {
         _tween[i] =
             visitor(_tween[i], emptyCodeUnit, (value) => IntTween(begin: value))
-                as IntTween;
+                as IntTween?;
       }
     }
   }

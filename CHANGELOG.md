@@ -1,3 +1,7 @@
+## 1.0.5
+
+* Update to null safety tween.
+
 ## 1.0.4+1
 
 * Update gif url.
