@@ -1,0 +1,24 @@
+name: Analyze github action changes
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+    paths:
+      - .github/**/*.yml
+      - '!.github/**/dependabot.yml'
+      - actions/**/*.yml
+
+
+jobs:
+  lint_actions:
+    uses: SilentCatD/reusable_actions_and_workflows/.github/workflows/template_analyze_action.yml@main
+
