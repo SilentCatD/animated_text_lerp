@@ -1,10 +1,1 @@
 assets/
-example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
-example/android/gradle/wrapper/gradle-wrapper.jar
-example/android/gradlew
-example/android/gradlew.bat
-example/android/local.properties
-example/ios/Flutter/Generated.xcconfig
-example/ios/Flutter/flutter_export_environment.sh
-example/ios/Runner/GeneratedPluginRegistrant.h
-example/ios/Runner/GeneratedPluginRegistrant.m
