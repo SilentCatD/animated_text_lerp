@@ -1,0 +1,26 @@
+name: Lint
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+    paths:
+      - '**/analysis_options.yml'
+      - '**/pubspec.yml'
+      - '**/*.dart'
+      - '!**/*.g.dart'
+      - '!**/*.mocks.dart'
+      - '!**/generated/**/*.dart'
+
+
+jobs:
+  lint:
+    uses: SilentCatD/reusable_actions_and_workflows/.github/workflows/template_analyze_dart_code.yml@main
