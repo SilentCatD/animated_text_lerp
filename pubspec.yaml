@@ -1,12 +1,11 @@
 name: animated_text_lerp
 description: "Simple widgets to animate between number or string text. Useful for number increase/decrease animation, currency value animation or string content changing animation."
 version: 2.0.0
-homepage: https://github.com/SilentCatD/animated_text_lerp
 issue_tracker: https://github.com/SilentCatD/animated_text_lerp/issues
 repository: https://github.com/SilentCatD/animated_text_lerp
 
 environment:
-  sdk: '>=2.13.0 <3.0.0'
+  sdk: '>=3.4.3 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -16,7 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
