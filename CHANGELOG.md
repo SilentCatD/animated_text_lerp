@@ -1,3 +1,10 @@
+## 2.0.0
+
+* Migrate to `textScaler`
+* Pump minimum sdk version 
+* Add example
+* Ignore assets
+ 
 ## 1.0.5
 
 * Update to null safety tween.
